@@ -40,6 +40,7 @@
 		2BFAFB2C1A7B7408007BAA73 /* ActivityStreamTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ActivityStreamTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BFAFB311A7B7408007BAA73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2BFAFB321A7B7408007BAA73 /* ActivityStreamTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ActivityStreamTests.m; sourceTree = "<group>"; };
+		2BFAFB441A7B7709007BAA73 /* NodeBackend.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = NodeBackend.xcodeproj; path = NodeBackend/NodeBackend.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +67,7 @@
 				2BFAFB151A7B7408007BAA73 /* ActivityStream */,
 				2BFAFB2F1A7B7408007BAA73 /* ActivityStreamTests */,
 				2BFAFB141A7B7408007BAA73 /* Products */,
+				2BFAFB441A7B7709007BAA73 /* NodeBackend.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -117,6 +119,13 @@
 				2BFAFB311A7B7408007BAA73 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2BFAFB451A7B7709007BAA73 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,6 +195,12 @@
 			mainGroup = 2BFAFB0A1A7B7408007BAA73;
 			productRefGroup = 2BFAFB141A7B7408007BAA73 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 2BFAFB451A7B7709007BAA73 /* Products */;
+					ProjectRef = 2BFAFB441A7B7709007BAA73 /* NodeBackend.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				2BFAFB121A7B7408007BAA73 /* ActivityStream */,
@@ -414,6 +429,7 @@
 				2BFAFB381A7B7408007BAA73 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2BFAFB391A7B7408007BAA73 /* Build configuration list for PBXNativeTarget "ActivityStreamTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +438,7 @@
 				2BFAFB3B1A7B7408007BAA73 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
