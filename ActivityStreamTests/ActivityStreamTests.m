@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
+#import "ActivityStreamService.h"
+#import "ActivityStreamObject.h"
 
 @interface ActivityStreamTests : XCTestCase
 
@@ -26,7 +28,13 @@
 }
 
 - (void)testExample {
-    // This is an example of a functional test case.
+   /* ActivityStreamObject* streamObject = [[ActivityStreamObject alloc] initWithData:@"testVerb" actor:@"testActor" object:@"testObject"];
+    
+    ActivityStreamService* activityStreamService = [[ActivityStreamService alloc] init];
+    [activityStreamService set:streamObject];
+    
+
+*/
     XCTAssert(YES, @"Pass");
 }
 

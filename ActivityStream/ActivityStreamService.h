@@ -7,7 +7,25 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "ActivityStreamObject.h"
+
+@class ActivityStreamService;
+
+@protocol ActivityStreamServiceDelegate <NSObject>
+
+- (void) modelUpdated;
+
+@end
 
 @interface ActivityStreamService : NSObject
+
+@property (nonatomic, weak) id<ActivityStreamServiceDelegate> delegate;
+
+
+- (NSArray*) streamObjects;
+-(void)set:(ActivityStreamObject*)object;
+//-(id)get:(NSInteger*)objectId;
+-(void)getAll;
+
 
 @end

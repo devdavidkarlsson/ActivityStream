@@ -8,15 +8,20 @@
 
 #import "AppDelegate.h"
 
-@interface AppDelegate ()
-
-@end
 
 @implementation AppDelegate
 
++ (AppDelegate *)appDelegate
+{
+    return [UIApplication sharedApplication].delegate;
+}
+
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    self.activityStreamService = [[ActivityStreamService alloc] init];
+    [self.activityStreamService getAll];
+    
     return YES;
 }
 

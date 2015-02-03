@@ -7,11 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ActivityStreamService.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
+/** Singleton data model */
+@property (strong, nonatomic) ActivityStreamService* activityStreamService;
 
++ (AppDelegate *)appDelegate;
 @end
 

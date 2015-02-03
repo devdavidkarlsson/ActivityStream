@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2BDF63331A7F93120069E5BA /* ActivityStreamObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BDF63321A7F93120069E5BA /* ActivityStreamObject.m */; };
+		2BDF63361A7F96B40069E5BA /* ActivityStreamObjectTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BDF63351A7F96B40069E5BA /* ActivityStreamObjectTest.m */; };
+		2BDF63391A7F9E7D0069E5BA /* ActivityStreamService.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BDF63381A7F9E7D0069E5BA /* ActivityStreamService.m */; };
+		2BDF633C1A8105B50069E5BA /* IMG_0001.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 2BDF633B1A8105B50069E5BA /* IMG_0001.JPG */; };
 		2BFAFB191A7B7408007BAA73 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BFAFB181A7B7408007BAA73 /* main.m */; };
 		2BFAFB1C1A7B7408007BAA73 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BFAFB1B1A7B7408007BAA73 /* AppDelegate.m */; };
 		2BFAFB1F1A7B7408007BAA73 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BFAFB1E1A7B7408007BAA73 /* ViewController.m */; };
@@ -27,6 +31,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2BDF63321A7F93120069E5BA /* ActivityStreamObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityStreamObject.m; sourceTree = "<group>"; };
+		2BDF63341A7F93F40069E5BA /* ActivityStreamObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ActivityStreamObject.h; sourceTree = "<group>"; };
+		2BDF63351A7F96B40069E5BA /* ActivityStreamObjectTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityStreamObjectTest.m; sourceTree = "<group>"; };
+		2BDF63371A7F9E7D0069E5BA /* ActivityStreamService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityStreamService.h; sourceTree = "<group>"; };
+		2BDF63381A7F9E7D0069E5BA /* ActivityStreamService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityStreamService.m; sourceTree = "<group>"; };
+		2BDF633B1A8105B50069E5BA /* IMG_0001.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0001.JPG; sourceTree = "<group>"; };
 		2BFAFB131A7B7408007BAA73 /* ActivityStream.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ActivityStream.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BFAFB171A7B7408007BAA73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2BFAFB181A7B7408007BAA73 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -61,6 +71,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2BDF633A1A80B6770069E5BA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2BDF63371A7F9E7D0069E5BA /* ActivityStreamService.h */,
+				2BDF63381A7F9E7D0069E5BA /* ActivityStreamService.m */,
+				2BDF63321A7F93120069E5BA /* ActivityStreamObject.m */,
+				2BDF63341A7F93F40069E5BA /* ActivityStreamObject.h */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		2BFAFB0A1A7B7408007BAA73 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +104,8 @@
 		2BFAFB151A7B7408007BAA73 /* ActivityStream */ = {
 			isa = PBXGroup;
 			children = (
+				2BDF633B1A8105B50069E5BA /* IMG_0001.JPG */,
+				2BDF633A1A80B6770069E5BA /* Model */,
 				2BFAFB1A1A7B7408007BAA73 /* AppDelegate.h */,
 				2BFAFB1B1A7B7408007BAA73 /* AppDelegate.m */,
 				2BFAFB1D1A7B7408007BAA73 /* ViewController.h */,
@@ -108,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				2BFAFB321A7B7408007BAA73 /* ActivityStreamTests.m */,
+				2BDF63351A7F96B40069E5BA /* ActivityStreamObjectTest.m */,
 				2BFAFB301A7B7408007BAA73 /* Supporting Files */,
 			);
 			path = ActivityStreamTests;
@@ -177,6 +201,7 @@
 				TargetAttributes = {
 					2BFAFB121A7B7408007BAA73 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = QT99SFP53C;
 					};
 					2BFAFB2B1A7B7408007BAA73 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -214,6 +239,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BDF633C1A8105B50069E5BA /* IMG_0001.JPG in Resources */,
 				2BFAFB221A7B7408007BAA73 /* Main.storyboard in Resources */,
 				2BFAFB271A7B7408007BAA73 /* LaunchScreen.xib in Resources */,
 				2BFAFB241A7B7408007BAA73 /* Images.xcassets in Resources */,
@@ -235,6 +261,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2BFAFB1F1A7B7408007BAA73 /* ViewController.m in Sources */,
+				2BDF63331A7F93120069E5BA /* ActivityStreamObject.m in Sources */,
+				2BDF63391A7F9E7D0069E5BA /* ActivityStreamService.m in Sources */,
 				2BFAFB1C1A7B7408007BAA73 /* AppDelegate.m in Sources */,
 				2BFAFB191A7B7408007BAA73 /* main.m in Sources */,
 			);
@@ -245,6 +273,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2BFAFB331A7B7408007BAA73 /* ActivityStreamTests.m in Sources */,
+				2BDF63361A7F96B40069E5BA /* ActivityStreamObjectTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,9 +389,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ActivityStream/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -370,9 +402,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ActivityStream/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
